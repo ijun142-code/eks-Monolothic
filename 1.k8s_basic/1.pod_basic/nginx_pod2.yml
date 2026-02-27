@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-nginx1
+  namespace: soldesk
+  labels:
+    app: my-nginx
+spec:
+  containers:
+  - name: my-nginx
+    image: nginx
+    ports:
+    - containerPort: 80
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-nginx2
+  namespace: soldesk
+  labels:
+    app: my-nginx
+spec:
+  containers:
+  - name: my-nginx
+    image: nginx
+    ports:
+    - containerPort: 80
